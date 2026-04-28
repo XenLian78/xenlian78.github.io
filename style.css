@@ -111,12 +111,16 @@ nav a:hover {
 .social-links a {
     color: var(--text-main);
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: color 0.3s;
+    /* ΑΛΛΑΓΗ: Μεγάλωσε λίγο το font-size για τα εικονίδια */
+    font-size: 1.5rem; 
+    transition: all 0.3s ease;
 }
 
-.social-links a:hover { color: var(--accent-color); }
+.social-links a:hover { 
+    color: var(--accent-color);
+    /* Προαιρετικό: Μικρό εφέ μεγέθυνσης στο hover */
+    transform: translateY(-3px); 
+}
 
 /* RIGHT COLUMN - CONTENT */
 main {
