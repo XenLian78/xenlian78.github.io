@@ -42,11 +42,19 @@ body {
 .profile-img {
     width: 250px;
     height: 250px;
-    border-radius: 15%;
+    border-radius: 50%;
     object-fit: cover;
     border: 3px solid rgba(94, 234, 212, 0.2);
     margin-bottom: 1.5rem;
+    transition: all 0.4s ease;
     filter: grayscale(20%);
+}
+
+.profile-img:hover {
+    filter: grayscale(0%); /* Επαναφέρει το χρώμα στο hover */
+    transform: scale(1.05); /* Μεγαλώνει ελαφρώς */
+    border-color: var(--accent-color); /* Το περίγραμμα φωτίζεται */
+    box-shadow: 0 0 20px rgba(94, 234, 212, 0.4); /* Εφέ neon glow */
 }
 
 header {
