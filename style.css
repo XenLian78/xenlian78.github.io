@@ -46,15 +46,7 @@ body {
     object-fit: cover;
     border: 3px solid rgba(94, 234, 212, 0.2); /* Απαλό περίγραμμα στο χρώμα του accent */
     margin-bottom: 1.5rem;
-    transition: all 0.4s ease; /* Για ομαλή κίνηση */
     filter: grayscale(20%); /* Δίνει ένα πιο σοβαρό, moody ύφος */
-}
-
-.profile-img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.05);
-    border-color: var(--accent-color);
-    box-shadow: 0 0 20px rgba(94, 234, 212, 0.4);
 }
 
 header {
